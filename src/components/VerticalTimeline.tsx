@@ -8,19 +8,19 @@ export default function VerticalTimeline () {
         <div className="absolute left-3 top-0 bottom-0 w-0.5 bg-gray-300 transform -translate-x-1/2"></div>
         <TimelineItem
           title="2003 - 2007"
-          content="Cursé Tecnicatura en Informática. Adquirí las bases de la programación y el pensamiento lógico."
+          content="Tecnicatura en Informática."
         />
         <TimelineItem
           title="2009 - 2014"
-          content="Carrera de Ingeniería en Telecomunicaciones: Fortalecí mis conocimientos de lógica computacional a través de materias como electrónica digital y lenguaje ensamblador aplicado a sistemas con microprocesadores."
+          content="Carrera de Ingeniería en Telecomunicaciones"
         />
          <TimelineItem
           title="2014 - 2023"
-          content="Ingeniero en Telecomunicaciones: Desarrollé habilidades de gestión y trabajo en equipo."
+          content="Trabajo de Ingeniero en Telecomunicaciones en Administración Pública"
         />
          <TimelineItem
-          title="2022 - 2024"
-          content="Retomo mi pasión por la programación, enfocandome en el Desarrollo Web. He completado varios cursos y proyectos, y estoy enfocado en aportar valor a partir de los conocimientos adquiridos."
+          title="2022 - Actualidad"
+          content="Cursos y Proyectos de Desarrollo Web"
         />
       </div>
     </div>

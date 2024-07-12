@@ -12,7 +12,9 @@ const config: Config = {
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))'
+          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        projectGradient: 'radial-gradient(circle, #4b6cb7 10%, #182848 90%)'
+
       },
       screens: {
         xs: '480px',

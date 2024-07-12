@@ -5,14 +5,17 @@ import { GoLink } from 'react-icons/go'
 import { TAG } from '../tagstack'
 export default function ProyectItem ({ title, description, image, tags } : {title:string, description: string, image:string, tags:TAG[]}) {
   return (
-    <div className='flex items-start gap-8 text-gray-700 mb-32'>
-        <Image src={image} alt='project-image' width={500} height={500} className='object-cover  transition duration-500  hover:shadow-2xl hover:scale-105 rounded-lg'/>
-        <div className='flex flex-col justify-start gap-4'>
+    <div className='flex items-start gap-8 text-gray-700 mb-32 '>
+        <div className='relative bg-projectGradient w-[700px] h-[250px] overflow-hidden flex-1 rounded-lg transition duration-500   hover:shadow-2xl' >
+        <Image src={image} alt='project-image' width={400} height={400} className='transition duration-500   bottom-10 left-6  rounded-lg  absolute hover:scale-105' loading='lazy'/>
+        </div>
+
+        <div className='flex flex-col justify-start gap-4 flex-1'>
             <h2 className='text-3xl font-medium'>{title}</h2>
             <div className='flex items-center gap-4'>
                 {
                     tags.map(tag =>
-                        <span key={tag.name} className='flex items-center gap-2 text-[13px]  bg-black text-white px-2 py-1 w-fit rounded-xl'>
+                        <span key={tag.name} style={{ backgroundColor: `${tag.bgColor}` }} className='flex items-center gap-2 text-[13px]   text-white px-4 py-[0.8px] w-fit rounded-xl'>
                             <Image src={tag.icon} alt={tag.name} width={16} height={16} /> {tag.name}
                         </span>
                     )
