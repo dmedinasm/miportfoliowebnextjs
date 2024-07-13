@@ -4,7 +4,7 @@ import { BsPersonCheckFill } from 'react-icons/bs'
 export default function AboutMe () {
   return (
         <section>
-            <h2 className='text-4xl flex items-center text-gray-700 font-semibold gap-8 mb-10'><BsPersonCheckFill />Sobre Mí</h2>
+            <h2 id='about' className='text-4xl flex items-center text-gray-700 font-semibold gap-8 mb-10'><BsPersonCheckFill />Sobre Mí</h2>
             <div className='flex items-center gap-6 flex-1'>
                 <div className='flex flex-col justify-start gap-6 leading-[1.7] '>
                     <p>Durante mis estudios en la <span className='text-yellow-500  font-medium'>Tecnicatura en Informática</span>, adquirí las <span className='text-yellow-500 font-medium'>bases fundamentales de la programación y el pensamiento lógico</span>. Esta formación inicial me permitió desarrollar una comprensión sólida de los conceptos esenciales de la informática.</p>
