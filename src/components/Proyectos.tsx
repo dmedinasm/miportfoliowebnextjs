@@ -5,7 +5,7 @@ import { TAGS } from '../tagstack'
 export default function Proyectos () {
   return (
     <section className='mb-10'>
-    <h2 id='projects' className='text-4xl flex items-center text-gray-700 font-semibold gap-4 pb-6 '><FaLaptopCode />Proyectos</h2>
+    <h2 id='projects' className='text-4xl flex items-center text-gray-700 dark:text-white font-semibold gap-4 pb-6 '><FaLaptopCode />Proyectos</h2>
     <ProyectItem
      title={'Restaurant Landing Page Template'}
      image='/restaurantuxui.jpg'

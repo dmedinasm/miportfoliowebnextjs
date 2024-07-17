@@ -5,7 +5,7 @@ export default function VerticalTimeline () {
   return (
     <div className="container mx-auto p-4">
       <div className="relative">
-        <div className="absolute left-3 top-0 bottom-0 w-0.5 bg-gray-300 transform -translate-x-1/2"></div>
+        <div className="absolute left-3 top-0 bottom-0 w-0.5 bg-gray-300 dark:bg-gray-600 transform -translate-x-1/2"></div>
         <TimelineItem
           title="2003 - 2007"
           content="Tecnicatura en Informática."

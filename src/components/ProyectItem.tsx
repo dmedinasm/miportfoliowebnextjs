@@ -11,7 +11,7 @@ export default function ProyectItem ({ title, description, image, tags } : {titl
         </div>
 
         <div className='flex flex-col justify-start gap-4 flex-1'>
-            <h2 className='text-3xl font-medium'>{title}</h2>
+            <h2 className='text-3xl font-medium dark:text-white'>{title}</h2>
             <div className='flex items-center gap-4'>
                 {
                     tags.map(tag =>
@@ -21,10 +21,10 @@ export default function ProyectItem ({ title, description, image, tags } : {titl
                     )
                 }
             </div>
-            <p className='leading-[1.6]'>{description}</p>
+            <p className='leading-[1.6] dark:text-gray-400'>{description}</p>
             <div className='flex items-center gap-4'>
-                <a href='#' className='bg-gray-900 flex items-center gap-2 text-white px-4 py-2 rounded-xl hover:opacity-95 hover:shadow-lg'><FiGithub />Code</a>
-                <a href='#' className='bg-gray-900 flex items-center gap-2 text-white px-4 py-2 rounded-xl hover:opacity-95 hover:shadow-lg' ><GoLink />Preview</a>
+                <a href='#' className='bg-gray-900 dark:bg-gray-700 dark:border dark:border-gray-500 flex items-center gap-2 dark:hover:border-gray-900 text-white px-4 py-2 rounded-xl hover:opacity-95 hover:shadow-lg'><FiGithub />Code</a>
+                <a href='#' className='bg-gray-900 dark:bg-gray-700 dark:border dark:border-gray-500 flex items-center gap-2 dark:hover:border-gray-900 text-white px-4 py-2 rounded-xl hover:opacity-95 hover:shadow-lg' ><GoLink />Preview</a>
             </div>
         </div>
     </div>
