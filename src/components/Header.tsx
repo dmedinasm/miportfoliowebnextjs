@@ -5,19 +5,21 @@ import { MdOutlineLightMode, MdOutlineDarkMode } from 'react-icons/md'
 
 import { AiOutlineDesktop } from 'react-icons/ai'
 import { useScrolled } from '@/useScrolled'
+import { useTheme } from '@/useTheme'
 
 export default function Header () {
   const [showMenu, setShowMenu] = useState(false)
-  const [ligthMode, setLightMode] = useState('System')
+  const [theme, setTheme] = useState('Light')
+  useTheme({ themeOption: theme })
   const { isScrolled } = useScrolled()
   const handleClick = (event: React.MouseEvent<HTMLLIElement>) => {
     const value = event.currentTarget.textContent
     if (value === 'Light') {
-      setLightMode('Light')
+      setTheme('Light')
     } else if (value === 'Dark') {
-      setLightMode('Dark')
+      setTheme('Dark')
     } else {
-      setLightMode('System')
+      setTheme('System')
     }
     setShowMenu(!showMenu)
   }
@@ -29,9 +31,9 @@ export default function Header () {
         <Link href={'#about'} className='hover:text-yellow-500'>Sobre Mí</Link>
         <a href={'mailto:dmedinasm@gmail.com'} className='hover:text-yellow-500'>Contacto</a>
         <button onClick={() => setShowMenu(!showMenu)}>
-          {ligthMode === 'Light' && <MdOutlineLightMode className='size-5 hover:scale-125 transition duration-300' />}
-          {ligthMode === 'Dark' && <MdOutlineDarkMode className='size-5 hover:scale-125 transition duration-300' />}
-          {ligthMode === 'System' && <AiOutlineDesktop className='size-5 hover:scale-125 transition duration-300' />}
+          {theme === 'Light' && <MdOutlineLightMode className='size-5 hover:scale-125 transition duration-300' />}
+          {theme === 'Dark' && <MdOutlineDarkMode className='size-5 hover:scale-125 transition duration-300' />}
+          {theme === 'System' && <AiOutlineDesktop className='size-5 hover:scale-125 transition duration-300' />}
         </button>
         <div className={`fixed top-12 z-10 right-[37%] i ${showMenu ? '' : 'hidden'}`}>
           <ul className='bg-white bg-opacity-70 flex flex-col py-1 px-1 dark:bg-black  dark:text-white  rounded-lg drop-shadow-md w-full'>
