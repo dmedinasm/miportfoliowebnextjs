@@ -4,7 +4,7 @@ import ProyectItem from './ProyectItem'
 import { TAGS } from '../tagstack'
 export default function Proyectos () {
   return (
-    <section className='mb-10'>
+    <section className='w-full mx-auto container sm:max-w-2xl md:max-w-4xl mb-10'>
     <h2 id='projects' className='text-4xl flex items-center text-gray-700 dark:text-white font-semibold gap-4 pb-6 '><FaLaptopCode />Proyectos</h2>
     <ProyectItem
      title={'Restaurant Landing Page Template'}
