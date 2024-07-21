@@ -6,6 +6,7 @@ export default function Proyectos () {
   return (
     <section className='w-full mx-auto container sm:max-w-2xl md:max-w-4xl mb-10'>
     <h2 id='projects' className='text-4xl flex items-center text-gray-700 dark:text-white font-semibold gap-4 pb-6 '><FaLaptopCode />Proyectos</h2>
+    <div className='flex flex-col gap-y-20'>
     <ProyectItem
      title={'Restaurant Landing Page Template'}
      image='/restaurantuxui.jpg'
@@ -24,6 +25,8 @@ export default function Proyectos () {
      description={'Fashion Tour es una tienda en línea ficticia que muestra la implementación de funciones esenciales de comercio electrónico.Creada con Next.js y Strapi HeadlessCMS'}
      tags={[TAGS.Nextjs, TAGS.Strapi]}
     />
+    </div>
+
    </section>
   )
 }
