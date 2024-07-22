@@ -9,7 +9,7 @@ export default function Hero () {
       <div className='max-w-xl'>
         <div className='flex items-center gap-4 mb-4'>
         <Image src={'/hero.png'} alt={'photo_hero'} width={75} height={50} className='rounded-full size-16'/>
-        <Badge title='Disponible para Trabajar'/>
+        <a href='https://www.linkedin.com/in/dmedinam'><Badge title='Disponible para Trabajar'/></a>
         </div>
         <h1 className="text-4xl font-bold tracking-tight dark:text-white sm:text-5xl text-gray-700">Daniel Miguel Medina Mateo</h1>
         <p className='mt-6 text-xl text-gray-700 dark:text-white'>Desarrollador Web. <span className='text-yellow-500 dark:text-yellow-300 font-bold'>Especializado en el desarrollo de aplicaciones web modernas.</span> Conocimientos en  tecnologías como <span className='text-yellow-500 font-bold dark:text-yellow-300'>React, Nextjs y TypeScript</span></p>

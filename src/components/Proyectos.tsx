@@ -12,18 +12,25 @@ export default function Proyectos () {
      image='/restaurantuxui.jpg'
      description={'Landing Page Template para un restaurante a partir de un diseño preestablecido en Figma. Creado con TailwindCSS y React.'}
      tags={[TAGS.React, TAGS.Tailwind]}
+     linkRepo='#'
+     linkWeb='https://restaurantuxiu.netlify.app/'
+
     />
     <ProyectItem
      title={'Dietary Planner Tool'}
      image='/dietary.jpg'
      description={'Herramienta online desarrollada con React y TailwindCSS para crear planes de dieta a partir de filtros de información que suministra el usuario.'}
      tags={[TAGS.React, TAGS.Tailwind]}
+     linkRepo='#'
+     linkWeb='https://dietaryplannertool.netlify.app/'
     />
     <ProyectItem
      title={'FashionTour - Online Store '}
      image='/fashiontour.jpg'
      description={'Fashion Tour es una tienda en línea ficticia que muestra la implementación de funciones esenciales de comercio electrónico.Creada con Next.js y Strapi HeadlessCMS'}
      tags={[TAGS.Nextjs, TAGS.Strapi]}
+     linkRepo='#'
+     linkWeb='#'
     />
     </div>
 

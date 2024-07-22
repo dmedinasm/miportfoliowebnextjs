@@ -3,12 +3,12 @@ import React from 'react'
 import { FiGithub } from 'react-icons/fi'
 import { GoLink } from 'react-icons/go'
 import { TAG } from '../tagstack'
-export default function ProyectItem ({ title, description, image, tags } : {title:string, description: string, image:string, tags:TAG[]}) {
+export default function ProyectItem ({ title, description, image, tags, linkRepo, linkWeb } : {title:string, description: string, image:string, tags:TAG[], linkRepo:string, linkWeb:string}) {
   return (
     <article className='flex flex-col space-x-0 space-y-8  text-gray-700 group sm:flex-row sm:space-x-8 sm:space-y-0 '>
           <div className='w-full sm:w-1/2'>
-              <div className='relative bg-darkGradient w-full h-[250px] overflow-hidden  rounded-lg transition duration-500   hover:shadow-2xl' >
-                  <Image src={image} alt='project-image' width={400} height={400} className='transition duration-500   top-[15%] right-[4%]   rounded-lg  absolute sm:hover:scale-[102%] max-w-[90%]' loading='lazy' layout='responsive' />
+              <div className='relative bg-darkGradient w-full h-[250px] overflow-hidden  rounded-lg transition duration-500   hover:shadow-lg' >
+                  <Image src={image} alt='project-image' width={400} height={400} className='transition duration-500   top-[15%] right-[4%]   rounded-lg  absolute  ss:hover:scale-[102%] max-w-[90%]' loading='lazy' layout='responsive' />
               </div>
           </div>
         <div className='w-full sm:w-1/2 sm:max-w-lg'>
@@ -24,8 +24,8 @@ export default function ProyectItem ({ title, description, image, tags } : {titl
             </div>
             <p className='leading-[1.6] dark:text-gray-400'>{description}</p>
             <div className='flex items-center flex-wrap gap-4 mt-3'>
-                <a href='#' className='bg-gray-900 dark:bg-gray-700 dark:border dark:border-gray-500 flex items-center gap-2 dark:hover:border-gray-900 text-white px-4 py-2 rounded-xl hover:opacity-95 hover:shadow-lg'><FiGithub />Code</a>
-                <a href='#' className='bg-gray-900 dark:bg-gray-700 dark:border dark:border-gray-500 flex items-center gap-2 dark:hover:border-gray-900 text-white px-4 py-2 rounded-xl hover:opacity-95 hover:shadow-lg' ><GoLink />Preview</a>
+                <a href={linkRepo} target='_blank' className='bg-gray-900 dark:bg-gray-700 dark:border dark:border-gray-500 flex items-center gap-2 dark:hover:border-gray-900 text-white px-4 py-2 rounded-xl hover:opacity-95 hover:shadow-lg'><FiGithub />Code</a>
+                <a href={linkWeb} target='_blank' className='bg-gray-900 dark:bg-gray-700 dark:border dark:border-gray-500 flex items-center gap-2 dark:hover:border-gray-900 text-white px-4 py-2 rounded-xl hover:opacity-95 hover:shadow-lg' ><GoLink />Preview</a>
             </div>
         </div>
     </article>
