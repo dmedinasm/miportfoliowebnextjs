@@ -12,7 +12,7 @@ export default function Proyectos () {
      image='/restaurantuxui.jpg'
      description={'Landing Page Template para un restaurante a partir de un diseño preestablecido en Figma. Creado con TailwindCSS y React.'}
      tags={[TAGS.React, TAGS.Tailwind]}
-     linkRepo='#'
+     linkRepo='https://github.com/dmedinasm/restaurantuxui'
      linkWeb='https://restaurantuxiu.netlify.app/'
 
     />
@@ -21,16 +21,16 @@ export default function Proyectos () {
      image='/dietary.jpg'
      description={'Herramienta online desarrollada con React y TailwindCSS para crear planes de dieta a partir de filtros de información que suministra el usuario.'}
      tags={[TAGS.React, TAGS.Tailwind]}
-     linkRepo='#'
+     linkRepo='https://github.com/dmedinasm/newdietaryplan'
      linkWeb='https://dietaryplannertool.netlify.app/'
     />
     <ProyectItem
      title={'FashionTour - Online Store '}
      image='/fashiontour.jpg'
-     description={'Fashion Tour es una tienda en línea ficticia que muestra la implementación de funciones esenciales de comercio electrónico.Creada con Next.js y Strapi HeadlessCMS'}
-     tags={[TAGS.Nextjs, TAGS.Strapi]}
-     linkRepo='#'
-     linkWeb='#'
+     description={'Fashion Tour es una tienda en línea ficticia que muestra la implementación de funciones esenciales de comercio electrónico.Creada con Next.js y Prisma.js ORM'}
+     tags={[TAGS.Nextjs, TAGS.Prisma]}
+     linkRepo='https://github.com/dmedinasm/fashiontour-ecommerce'
+     linkWeb='https://fashiontour-ecommerce.vercel.app/'
     />
     </div>
 

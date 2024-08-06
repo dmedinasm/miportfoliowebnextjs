@@ -25,6 +25,12 @@ export const TAGS = {
     name: 'Strapi.js',
     bgColor: '#003159',
     icon: '/LogosStrapiIcon.svg'
+  },
+
+  Prisma: {
+    name: 'Prisma.js',
+    bgColor: '#003159',
+    icon: '/CatppuccinPrisma.svg'
   }
 
 }

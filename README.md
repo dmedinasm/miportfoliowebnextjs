@@ -4,11 +4,11 @@ Bienvenido a mi portafolio web personal. Aquí encontrarás una muestra de mis p
 
 ## Contenido
 
-- [Formación](#sobre-mí)
-- [Proyectos](#proyectos)
-- [Contacto](#contacto)
+- [Formación]
+- [Proyectos]
+- [Sobre Mí]
 
 ## Hecho con
-- [TailwindCSS]
-- [Typescript]
 - [Nextjs]
+- [Typescript]
+- [TailwindCSS]
