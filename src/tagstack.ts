@@ -30,7 +30,7 @@ export const TAGS = {
   Prisma: {
     name: 'Prisma.js',
     bgColor: '#003159',
-    icon: '/CatppuccinPrisma.svg'
+    icon: '/SkillIconsPrisma.svg'
   }
 
 }
