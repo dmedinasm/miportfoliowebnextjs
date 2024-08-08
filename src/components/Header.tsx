@@ -31,7 +31,7 @@ export default function Header () {
         <Link href={'#about'} className='hover:text-yellow-500'>Sobre Mí</Link>
         <a href={'mailto:dmedinasm@gmail.com'} className='hover:text-yellow-500'>Contacto</a>
         <div className='relative'>
-        <button onClick={() => setShowMenu(!showMenu)}>
+        <button onClick={() => setShowMenu(!showMenu)} className='flex items-center'>
           {theme === 'Light' && <MdOutlineLightMode className='size-5 hover:scale-125 transition duration-300' />}
           {theme === 'Dark' && <MdOutlineDarkMode className='size-5 hover:scale-125 transition duration-300' />}
           {theme === 'System' && <AiOutlineDesktop className='size-5 hover:scale-125 transition duration-300' />}

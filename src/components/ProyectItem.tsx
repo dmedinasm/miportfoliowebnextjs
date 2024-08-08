@@ -7,8 +7,8 @@ export default function ProyectItem ({ title, description, image, tags, linkRepo
   return (
     <article className='flex flex-col space-x-0 space-y-8  text-gray-700 group sm:flex-row sm:space-x-8 sm:space-y-0 '>
           <div className='w-full sm:w-1/2'>
-              <div className='relative bg-darkGradient w-full h-[250px] overflow-hidden  rounded-lg transition duration-500   hover:shadow-lg' >
-                  <Image src={image} alt='project-image' width={400} height={400} className='transition duration-500   top-[15%] right-[4%]   rounded-lg  absolute  ss:hover:scale-[102%] max-w-[90%]' loading='lazy' layout='responsive' />
+              <div className='relative bg-bgGradient w-full h-[250px] overflow-hidden flex items-center justify-center  rounded-lg transition duration-500  hover:shadow-lg' >
+                  <Image src={image} alt='project-image' width={400} height={400} className='transition duration-500 rounded-lg  absolute  ss:hover:scale-[102%] max-w-[90%]' />
               </div>
           </div>
         <div className='w-full sm:w-1/2 sm:max-w-lg'>

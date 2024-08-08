@@ -14,8 +14,7 @@ const config: Config = {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-        lightGradient: 'radial-gradient(circle, #4b6cb7 10%, #182848 90%)',
-        darkGradient: 'radial-gradient(circle at 50% 50%, rgba(0, 255, 235, 1) 0%, rgba(7, 58, 187, 1) 100%)'
+        bgGradient: 'linear-gradient(90deg, rgba(121, 85, 72, 1) 0%, rgba(255, 193, 7, 1) 100%)'
 
       },
       screens: {
