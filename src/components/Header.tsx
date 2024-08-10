@@ -31,11 +31,11 @@ export default function Header () {
         <Link href={'#about'} className='hover:text-yellow-500'>Sobre Mí</Link>
         <a href={'mailto:dmedinasm@gmail.com'} className='hover:text-yellow-500'>Contacto</a>
         <div className='relative'>
-        <button onClick={() => setShowMenu(!showMenu)} className='flex items-center'>
+        <div onClick={() => setShowMenu(!showMenu)} className='flex items-center cursor-pointer'>
           {theme === 'Light' && <MdOutlineLightMode className='size-5 hover:scale-125 transition duration-300' />}
           {theme === 'Dark' && <MdOutlineDarkMode className='size-5 hover:scale-125 transition duration-300' />}
           {theme === 'System' && <AiOutlineDesktop className='size-5 hover:scale-125 transition duration-300' />}
-        </button>
+        </div>
         <div className={`absolute  top-[150%] z-10 right-[5%] i ${showMenu ? '' : 'hidden'}`}>
           <ul className= 'bg-white opacity-90 flex flex-col py-1 px-1 dark:bg-black  dark:text-white  rounded-lg drop-shadow-md w-full'>
             <li onClick={handleClick} className='hover:bg-gray-300 dark:hover:bg-gray-600 py-2 pl-2 pr-12 w-full cursor-pointer  rounded-sm'>Light</li>

@@ -8,7 +8,7 @@ export default function Hero () {
     <section className='py-16 md:py-36 w-full mx-auto container md:max-w-4xl sm:max-w-2xl'>
       <div className='max-w-xl'>
         <div className='flex items-center gap-4 mb-4'>
-        <Image src={'/hero.png'} alt={'photo_hero'} width={75} height={50} className='rounded-full size-16'/>
+        <Image src={'/hero.png'} alt={'photo_hero'} width={75} height={75} className='rounded-full size-14 '/>
         <a href='https://www.linkedin.com/in/dmedinam'><Badge title='Disponible para Trabajar'/></a>
         </div>
         <h1 className="text-4xl font-bold tracking-tight dark:text-white sm:text-5xl text-gray-700">Daniel Miguel Medina Mateo</h1>
