@@ -27,8 +27,8 @@ export default function Proyectos () {
     <ProyectItem
      title={'FashionTour - Online Store '}
      image='/fashiontour.jpg'
-     description={'Fashion Tour es una tienda en línea ficticia que muestra la implementación de funciones esenciales de comercio electrónico.Creada con Next.js y Prisma.js ORM'}
-     tags={[TAGS.Nextjs, TAGS.Prisma]}
+     description={'Fashion Tour es una tienda en línea ficticia que muestra la implementación de funciones esenciales de comercio electrónico.Creada con Next.js y Firebase.'}
+     tags={[TAGS.Nextjs, TAGS.Firebase]}
      linkRepo='https://github.com/dmedinasm/fashiontour-ecommerce'
      linkWeb='https://fashiontour-ecommerce.vercel.app/'
     />

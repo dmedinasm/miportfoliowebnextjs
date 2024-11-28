@@ -17,8 +17,8 @@ export const TAGS = {
   },
   Nextjs: {
     name: 'Next.js',
-    bgColor: 'black',
-    icon: '/DeviconNextjs.svg'
+    bgColor: '#003159',
+    icon: 'SkillIconsNextjsLight.svg'
   },
 
   Strapi: {
@@ -31,6 +31,11 @@ export const TAGS = {
     name: 'Prisma.js',
     bgColor: '#003159',
     icon: '/SkillIconsPrisma.svg'
+  },
+  Firebase: {
+    name: 'Firebase',
+    bgColor: '#003159',
+    icon: '/DeviconFirebase.svg'
   }
 
 }
